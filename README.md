@@ -101,12 +101,22 @@ delay(200);
 }
 }
 ```
+
+### Circuit diagram
+
+![image](https://github.com/Vaish-1011/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/135130074/4e43761b-506f-4861-b4da-0e0dcffd83a1)
+
+### Schematic diagram
+
+![image](https://github.com/Vaish-1011/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/135130074/e6c29935-682b-4402-8d84-0df40174d06a)
+
 ### Distance vs measurement table 
 
 ![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
 
 			Average error = sum/ number of readings 
- 
+### Graph
+
 ### RESULTS
 
 Thus the Error value between the actual value and measured value is calculated with the help of ultrasonic sensor.
