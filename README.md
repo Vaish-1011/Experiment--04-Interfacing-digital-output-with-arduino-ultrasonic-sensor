@@ -1,9 +1,10 @@
-# EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
- ###  DATE: 
+## EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT:
+## DATE : 14-03-2024
+## NAME : VAISHNAVI M																		             
+## ROLLNUMBER :  212221040175
+## DEPARTMENT : CSE
+
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
@@ -60,46 +61,52 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### PROGRAM 
 ```
-
-
-
-
-
-
-
-
-
-
-`````````
-
-
+const int trigpin=10;
+const int echopin=9;
+int red=7;
+int green=6;
+long duration;
+float distance;
+void setup()
+{
+pinMode(trigpin, OUTPUT);
+pinMode(echopin, INPUT);
+pinMode(red, OUTPUT);
+pinMode(green, OUTPUT);
+Serial.begin(9600)
+}
+void loop()
+{
+digitalWrite(trigpin, LOW);
+delay(20);
+digitalWrite(trigpin, HIGH);
+delay(20);
+digitalWrite(trigpin, LOW);
+duration=pulseIn(echopin, HIGH);
+distance-duration*(0.034/2); S
+erial.print(distance);
+Serial.println("cms");
+if(distance>5) {
+digitalWrite(red, HIGH);
+delay(20);
+digitalWrite(red, LOW);
+delay(20);
+}
+else
+{
+digitalWrite(green, HIGH);
+delay(200);
+digitalWrite(green, HIGH);
+delay(200);
+}
+}
+```
 ### Distance vs measurement table 
-
-			
- 
-			
-			
-			
 
 ![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
 
-			
-			
-			
-			
-			
 			Average error = sum/ number of readings 
  
-
-
-
-
-
-
-
-
 ### RESULTS
 
-
-
- 
+Thus the Error value between the actual value and measured value is calculated with the help of ultrasonic sensor.
